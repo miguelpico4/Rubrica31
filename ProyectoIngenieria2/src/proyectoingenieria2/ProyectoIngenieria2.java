@@ -19,10 +19,13 @@ public class ProyectoIngenieria2 {
         int n2=5;
         int resta=0;
         int suma=0;
+        int multiplicacion=0;
         resta=n1-n2;
         suma=n1+n2;
+        multiplicacion=n1*n2;
         System.out.println("el resultado de la resta es "+resta);
         System.out.println("el resultado de la suma es "+suma);
+        System.out.println("el resultado de la resta es "+multiplicacion);
         
     }
     
