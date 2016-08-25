@@ -5,6 +5,10 @@
  */
 package proyectoingenieria2;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
 /**
  *
  * @author Miguel
@@ -15,21 +19,37 @@ public class ProyectoIngenieria2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int n1=10;
-        int n2=5;
-        int resta=0;
-        int suma=0;
-        int multiplicacion=0;
-        int division=0;
-        resta=n1-n2;
-        suma=n1+n2;
-        multiplicacion=n1*n2;
-        division=n1/n2;
-        System.out.println("el resultado de la resta es "+resta);
-        System.out.println("el resultado de la suma es "+suma);
-        System.out.println("el resultado de la resta es "+multiplicacion);
-        System.out.println("el resultado de la resta es "+division);
-        
+      
+      Scanner sc = new Scanner(System.in);
+      int opciones=0;
+       
+        System.out.println("escoja operacion a realizar");
+        System.out.println("digite 1 si desea una suma");
+        System.out.println("digite 2 si desea una resta");
+        System.out.println("digite 3 si desea una multiplicacion");
+        System.out.println("digite 4 si desea una division");
+        System.out.println("Ingrese opcion");
+        opciones=sc.nextInt();
+        if (opciones==1){
+            Operaciones objeto= new Operaciones();
+            objeto.Operacionsuma();
+            System.out.println("el resultado es"+objeto.Operacionsuma());
+        }
+        if (opciones==2){
+            Operaciones objeto= new Operaciones();
+            objeto.Operacionresta();
+            System.out.println("el resultado es"+objeto.Operacionresta());
+        }
+        if (opciones==3){
+            Operaciones objeto= new Operaciones();
+            objeto.Operacionmultiplicacion();
+            System.out.println("el resultado es"+objeto.Operacionmultiplicacion());
+        }
+        if (opciones==4){
+            Operaciones objeto= new Operaciones();
+            objeto.Operaciondivision();
+            System.out.println("el resultado es"+objeto.Operaciondivision());
+        }
     }
     
 }
