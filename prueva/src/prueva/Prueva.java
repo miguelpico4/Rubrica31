@@ -20,12 +20,14 @@ public class Prueva {
         int n2=3;
         int sum=0; 
         int resta=0;
+        int multiplicacion=0;
         sum=n1+n2;
         resta=n1-n2;
+        multiplicacion=n1*n2;
         
         System.out.println("el resultado es "+sum);
         System.out.println("el resultado es "+resta);
-        
+        System.out.println("el resultado es "+multiplicacion);
     }
     
 }
