@@ -16,10 +16,11 @@ public class Prueva {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int n1=0;
-        int n2=0;
+        int n1=3;
+        int n2=3;
         int sum=0; 
-        System.out.println("hola mundo");
+        sum=n1+n2;
+        System.out.println("el resultado es "+sum);
         
     }
     
